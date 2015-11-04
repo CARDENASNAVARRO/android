@@ -264,6 +264,16 @@ function register_event_handlers()
     {
          activate_page("#mainpage"); 
     });
+            /* button  #otros monofasico */
+    $(document).on("click", "#otrosMon", function(evt)
+    {
+         activate_page("#consumo"); 
+    });
+            /* button  #Atras monofasico */
+    $(document).on("click", "#atrasMon", function(evt)
+    {
+         activate_page("#mainpage"); 
+    });
     
     }
 document.addEventListener("app.Ready", register_event_handlers, false);
