@@ -466,7 +466,9 @@ body:not(#afui) .upage-outer {
 @media all {
   #afui .fondmono {
     background-color: ;
-    background-image: url("../images/mono.png");
+    background-image: linear-gradient(top, #1e5799 0%, #dd2a45 100%);
+    background-image: -webkit-linear-gradient(top, #1e5799 0%, #dd2a45 100%);
+    background-image: url("../images/2.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -494,5 +496,62 @@ body:not(#afui) .upage-outer {
     font-family: serif;
     text-decoration: underline;
     text-align: center;
+  }
+}
+@media all {
+  #afui .labeltrif > label {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bolder;
+    color: #9f0941;
+    font-family: serif;
+    text-align: left;
+    line-height: normal;
+  }
+}
+@media all {
+  #afui .fondotrif {
+    background-color: #9adaed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+@media all {
+  #afui .imptxt input,
+  #afui .imptxt textarea,
+  #afui .imptxt ::-webkit-input-placeholder {
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: 500;
+    color: #800040;
+    font-family: serif;
+    text-decoration: none;
+    text-align: left;
+    line-height: normal;
+  }
+  #afui .imptxt input,
+  #afui .imptxt textarea,
+  #afui .imptxt ::-webkit-input-placeholder {
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: 500;
+    color: #800040;
+    font-family: serif;
+    text-decoration: none;
+    text-align: left;
+    line-height: normal;
+  }
+  #afui .imptxt input,
+  #afui .imptxt textarea,
+  #afui .imptxt ::-webkit-input-placeholder {
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: 500;
+    color: #800040;
+    font-family: serif;
+    text-decoration: none;
+    text-align: left;
+    line-height: normal;
   }
 }
