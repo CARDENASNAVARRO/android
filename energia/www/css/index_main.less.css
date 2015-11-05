@@ -335,9 +335,6 @@ body:not(#afui) .upage-outer {
 .right-receptacle {
   float: right;
 }
-[data-uib="media/text"] p:first-of-type {
-  margin-top: 0px;
-}
 .ellipsis {
   overflow: hidden;
   display: -webkit-box;
@@ -400,7 +397,7 @@ body:not(#afui) .upage-outer {
 @media all {
   #afui .fondo {
     background-color: ;
-    background-image: url("../images/lampa.png");
+    background-image: url("../images/electro.gif");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -418,7 +415,7 @@ body:not(#afui) .upage-outer {
     border-width: 1px;
     border-style: solid;
     border-color: grey;
-    background-color: ;
+    background-color: #ffffff;
   }
 }
 @media all {
@@ -451,9 +448,7 @@ body:not(#afui) .upage-outer {
 }
 @media all {
   #afui .default-image-sizing > img {
-    margin: 5px;
     width: 50px;
-    height: 100%;
   }
 }
 .figure-align {
@@ -607,7 +602,7 @@ body:not(#afui) .upage-outer {
     padding-right: 20px;
   }
 }
-@media all and (min-width: 323px) {
+@media all and (min-width: 320px) {
   #afui .row-height-1 > .col > .content-area {
     min-height: 100px;
   }
@@ -661,10 +656,7 @@ body:not(#afui) .upage-outer {
   }
 }
 @media all {
-  #afui .correr {
-    display: block;
-    visibility: visible;
-  }
+  
 }
 @media all {
   #afui .label > label {
@@ -686,21 +678,20 @@ body:not(#afui) .upage-outer {
 }
 @media all {
   #afui .txtcal {
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     font-weight: bolder;
-    color: #ffffff;
-    font-family: serif;
+    color: #0000ff;
     text-decoration: none;
     text-align: center;
   }
 }
 @media all {
   #afui .txcanc {
-    font-size: 25px;
+    font-size: 23px;
     font-style: normal;
     font-weight: bolder;
-    color: #0000ff;
+    color: #00ff00;
     font-family: serif;
     text-decoration: none;
     text-align: center;
@@ -709,14 +700,9 @@ body:not(#afui) .upage-outer {
 }
 @media all {
   #afui .txotros {
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: bold;
-    color: #0000ff;
-    font-family: serif;
-    text-decoration: none;
     text-align: center;
-    line-height: normal;
   }
 }
 figure.widget audio {
@@ -819,123 +805,5 @@ figure.widget audio {
     font-weight: bold;
     color: #800040;
     font-family: serif;
-  }
-}
-@media all {
-  #afui .medida > div.widget-container.left-receptacle,
-  #afui .medida > div.widget-container.right-receptacle {
-    width: 20px;
-    text-align: center;
-  }
-  #afui .medida > div.widget-container.left-receptacle,
-  #afui .medida > div.widget-container.right-receptacle {
-    width: 20px;
-    text-align: center;
-  }
-}
-@media all {
-  #afui .wrapping-col > .medidas,
-  #afui .wrapping-col > .afScrollPanel > .medidas,
-  #afui .vertical-col > .medidas,
-  #afui .vertical-col > .afScrollPanel > .medidas {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-  #afui .wrapping-col > .medidas,
-  #afui .wrapping-col > .afScrollPanel > .medidas,
-  #afui .vertical-col > .medidas,
-  #afui .vertical-col > .afScrollPanel > .medidas {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-  #afui .wrapping-col > .medidas,
-  #afui .wrapping-col > .afScrollPanel > .medidas,
-  #afui .vertical-col > .medidas,
-  #afui .vertical-col > .afScrollPanel > .medidas {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-  #afui .wrapping-col > .medidas,
-  #afui .wrapping-col > .afScrollPanel > .medidas,
-  #afui .vertical-col > .medidas,
-  #afui .vertical-col > .afScrollPanel > .medidas {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-  #afui .medidas {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-}
-@media all {
-  #afui .detall p {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: bold;
-    color: #800040;
-    font-family: serif;
-    text-decoration: underline;
-    text-align: center;
-    line-height: ok;
-  }
-}
-@media all {
-  #afui .txtregresar {
-    font-size: 25px;
-    font-style: normal;
-    font-weight: bold;
-    color: #db042f;
-    font-family: serif;
-    text-decoration: none;
-    text-align: center;
-    line-height: normal;
-  }
-}
-@media all {
-  #afui .fondorural {
-    background-color: ;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-}
-@media all {
-  #afui .Zurbana > img {
-    margin: 10px;
-    width: 70%;
-  }
-}
-@media all {
-  #afui .zurban {
-    font-size: 25px;
-    font-style: oblique;
-    font-weight: bold;
-    color: #0000ff;
-    text-decoration: underline;
-    text-align: center;
-  }
-}
-@media all {
-  #afui .ImgZRural > img {
-    margin: 10px;
-    width: 75%;
-  }
-}
-.uib_row_1:not(.cright) > .col {
-  padding-right: 20px;
-}
-.uib_row_1.cright > .col {
-  padding-left: 20px;
-}
-@media all {
-  .col-0_12-12 {
-    width: auto;
-    float: none !important;
-  }
-  .urow:not(.cright) > .col-0_12-12 {
-    padding-right: 0px !important;
-  }
-  .urow.cright > .col-0_12-12 {
-    padding-left: 0px !important;
   }
 }

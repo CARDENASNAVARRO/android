@@ -253,29 +253,7 @@ function register_event_handlers()
         //alert(montoTotalArtefacto);
     }
 
-    /* button  #rregresarRu */
-    $(document).on("click", "#regresarRu", function(evt)
-    {
-         activate_page("#mainpage"); 
-    });
-    
-        /* button  #calcRur */
-    $(document).on("click", "#calcRur", function(evt)
-    {
-         activate_page("#mainpage"); 
-    });
-            /* button  #otros monofasico */
-    $(document).on("click", "#otrosMon", function(evt)
-    {
-         activate_page("#consumo"); 
-    });
-            /* button  #Atras monofasico */
-    $(document).on("click", "#atrasMon", function(evt)
-    {
-         activate_page("#mainpage"); 
-    });
-    
-    }
+}
 document.addEventListener("app.Ready", register_event_handlers, false);
 })();
 
