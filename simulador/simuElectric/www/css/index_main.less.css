@@ -290,7 +290,7 @@ body:not(#afui) .upage-outer {
 @media all {
   #afui .default-graphic-button {
     border-radius: 5px;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     border-color: grey;
     background-color: ;
@@ -298,7 +298,6 @@ body:not(#afui) .upage-outer {
 }
 @media all {
   #afui .hover-graphic-button:hover {
-    border-radius: 25px;
     background-color: #eeeeee;
   }
 }
@@ -320,46 +319,24 @@ body:not(#afui) .upage-outer {
 }
 @media all {
   #afui .default-graphic-sizing {
-    width: 150px  !important;
+    width: 150px    !important;
     -webkit-flex: 0 0 auto !important;
     -moz-flex: 0 0 auto !important;
     -ms-flex: 0 0 auto !important;
     -o-flex: 0 0 auto !important;
     flex: 0 0 auto !important;
+    min-width: 150px ;
+    max-width: 250px;
     padding: 5px 5px 5px 5px;
   }
 }
 @media all {
   #afui .default-image-sizing > img {
-    margin: 5px;
-    width: 100px;
+    width: 60px;
   }
 }
 @media all {
-  #afui .wrapping-col > .d-margins,
-  #afui .wrapping-col > .afScrollPanel > .d-margins {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  #afui .wrapping-col > .d-margins,
-  #afui .wrapping-col > .afScrollPanel > .d-margins {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  #afui .vertical-col > .d-margins,
-  #afui .vertical-col > .afScrollPanel > .d-margins {
-    margin-left: 26px;
-    margin-right: 26px;
-  }
-  #afui .vertical-col > .d-margins,
-  #afui .vertical-col > .afScrollPanel > .d-margins {
-    margin-left: 26px;
-    margin-right: 26px;
-  }
-  #afui .d-margins {
-    margin-top: 6px;
-    margin-bottom: 30px;
-  }
+  
 }
 @media all {
   #afui .fondoprincipal {
@@ -553,5 +530,1773 @@ body:not(#afui) .upage-outer {
     text-decoration: none;
     text-align: left;
     line-height: normal;
+  }
+}
+.uib-card {
+  position: relative;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.card-header,
+.card-left,
+.card-footer,
+.card-right {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.card-header {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: auto;
+}
+.card-footer {
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: auto;
+}
+.card-left {
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+.card-right {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.uib-card section .widget-divider:only-of-type {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: auto !important;
+  width: auto !important;
+}
+.uib-card .widget-divider:only-of-type div {
+  height: 100%;
+}
+.card_grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+.card_grid > .widget {
+  flex-grow: 1;
+}
+@media all {
+  #afui .flex-basis-20 > .widget {
+    flex-basis: calc(100% / 3);
+  }
+}
+@media all {
+  #afui .section-dimension-21 .card-header {
+    height: 40px;
+  }
+  #afui .section-dimension-21 .card-footer {
+    height: 40px;
+  }
+  #afui .section-dimension-21 .card-left {
+    width: 50px;
+  }
+  #afui .section-dimension-21 .card-right {
+    width: 50px;
+  }
+  #afui .section-dimension-21 {
+    min-height: 100px;
+  }
+  #afui div.section-dimension-21.header-on-left .card-left {
+    top: 40px;
+  }
+  #afui div.section-dimension-21.header-on-left .card-header {
+    left: 0px;
+  }
+  #afui div.section-dimension-21.left-on-header .card-left {
+    top: 0px;
+  }
+  #afui div.section-dimension-21.left-on-header .card-header {
+    left: 50px;
+  }
+  #afui div.section-dimension-21.header-on-right .card-right {
+    top: 40px;
+  }
+  #afui div.section-dimension-21.header-on-right .card-header {
+    right: 0px;
+  }
+  #afui div.section-dimension-21.right-on-header .card-right {
+    top: 0px;
+  }
+  #afui div.section-dimension-21.right-on-header .card-header {
+    right: 50px;
+  }
+  #afui div.section-dimension-21.footer-on-left .card-left {
+    bottom: 40px;
+  }
+  #afui div.section-dimension-21.footer-on-left .card-footer {
+    left: 0px;
+  }
+  #afui div.section-dimension-21.left-on-footer .card-left {
+    bottom: 0px;
+  }
+  #afui div.section-dimension-21.left-on-footer .card-footer {
+    left: 50px;
+  }
+  #afui div.section-dimension-21.footer-on-right .card-right {
+    bottom: 40px;
+  }
+  #afui div.section-dimension-21.footer-on-right .card-footer {
+    right: 0px;
+  }
+  #afui div.section-dimension-21.right-on-footer .card-right {
+    bottom: 0px;
+  }
+  #afui div.section-dimension-21.right-on-footer .card-footer {
+    right: 50px;
+  }
+  #afui .section-dimension-21.cpad-1 {
+    padding: 40px 0px 0px 0px;
+  }
+  #afui .section-dimension-21.cpad-1 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-21.cpad-8 {
+    padding: 0px 50px 0px 0px;
+  }
+  #afui .section-dimension-21.cpad-8 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-21.cpad-9 {
+    padding: 40px 50px 0px 0px;
+  }
+  #afui .section-dimension-21.cpad-9 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-21.cpad-4 {
+    padding: 0px 0px 40px 0px;
+  }
+  #afui .section-dimension-21.cpad-4 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-21.cpad-5 {
+    padding: 40px 0px 40px 0px;
+  }
+  #afui .section-dimension-21.cpad-5 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-21.cpad-12 {
+    padding: 0px 50px 40px 0px;
+  }
+  #afui .section-dimension-21.cpad-12 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-21.cpad-13 {
+    padding: 40px 50px 40px 0px;
+  }
+  #afui .section-dimension-21.cpad-13 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-21.cpad-2 {
+    padding: 0px 0px 0px 50px;
+  }
+  #afui .section-dimension-21.cpad-2 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-21.cpad-3 {
+    padding: 40px 0px 0px 50px;
+  }
+  #afui .section-dimension-21.cpad-3 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-21.cpad-10 {
+    padding: 0px 50px 0px 50px;
+  }
+  #afui .section-dimension-21.cpad-10 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-21.cpad-11 {
+    padding: 40px 50px 0px 50px;
+  }
+  #afui .section-dimension-21.cpad-11 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-21.cpad-6 {
+    padding: 0px 0px 40px 50px;
+  }
+  #afui .section-dimension-21.cpad-6 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-21.cpad-7 {
+    padding: 40px 0px 40px 50px;
+  }
+  #afui .section-dimension-21.cpad-7 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-21.cpad-14 {
+    padding: 0px 50px 40px 50px;
+  }
+  #afui .section-dimension-21.cpad-14 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-21.cpad-15 {
+    padding: 40px 50px 40px 50px;
+  }
+  #afui .section-dimension-21.cpad-15 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-21.cpad-0 {
+    padding: 0px 0px 0px 0px;
+  }
+  #afui .section-dimension-21.cpad-0 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+@media all {
+  #afui .section-dimension-22 .card-header {
+    height: 40px;
+  }
+  #afui .section-dimension-22 .card-footer {
+    height: 40px;
+  }
+  #afui .section-dimension-22 .card-left {
+    width: 50px;
+  }
+  #afui .section-dimension-22 .card-right {
+    width: 50px;
+  }
+  #afui .section-dimension-22 {
+    min-height: 100px;
+  }
+  #afui div.section-dimension-22.header-on-left .card-left {
+    top: 40px;
+  }
+  #afui div.section-dimension-22.header-on-left .card-header {
+    left: 0px;
+  }
+  #afui div.section-dimension-22.left-on-header .card-left {
+    top: 0px;
+  }
+  #afui div.section-dimension-22.left-on-header .card-header {
+    left: 50px;
+  }
+  #afui div.section-dimension-22.header-on-right .card-right {
+    top: 40px;
+  }
+  #afui div.section-dimension-22.header-on-right .card-header {
+    right: 0px;
+  }
+  #afui div.section-dimension-22.right-on-header .card-right {
+    top: 0px;
+  }
+  #afui div.section-dimension-22.right-on-header .card-header {
+    right: 50px;
+  }
+  #afui div.section-dimension-22.footer-on-left .card-left {
+    bottom: 40px;
+  }
+  #afui div.section-dimension-22.footer-on-left .card-footer {
+    left: 0px;
+  }
+  #afui div.section-dimension-22.left-on-footer .card-left {
+    bottom: 0px;
+  }
+  #afui div.section-dimension-22.left-on-footer .card-footer {
+    left: 50px;
+  }
+  #afui div.section-dimension-22.footer-on-right .card-right {
+    bottom: 40px;
+  }
+  #afui div.section-dimension-22.footer-on-right .card-footer {
+    right: 0px;
+  }
+  #afui div.section-dimension-22.right-on-footer .card-right {
+    bottom: 0px;
+  }
+  #afui div.section-dimension-22.right-on-footer .card-footer {
+    right: 50px;
+  }
+  #afui .section-dimension-22.cpad-1 {
+    padding: 40px 0px 0px 0px;
+  }
+  #afui .section-dimension-22.cpad-1 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-22.cpad-8 {
+    padding: 0px 50px 0px 0px;
+  }
+  #afui .section-dimension-22.cpad-8 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-22.cpad-9 {
+    padding: 40px 50px 0px 0px;
+  }
+  #afui .section-dimension-22.cpad-9 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-22.cpad-4 {
+    padding: 0px 0px 40px 0px;
+  }
+  #afui .section-dimension-22.cpad-4 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-22.cpad-5 {
+    padding: 40px 0px 40px 0px;
+  }
+  #afui .section-dimension-22.cpad-5 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-22.cpad-12 {
+    padding: 0px 50px 40px 0px;
+  }
+  #afui .section-dimension-22.cpad-12 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-22.cpad-13 {
+    padding: 40px 50px 40px 0px;
+  }
+  #afui .section-dimension-22.cpad-13 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-22.cpad-2 {
+    padding: 0px 0px 0px 50px;
+  }
+  #afui .section-dimension-22.cpad-2 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-22.cpad-3 {
+    padding: 40px 0px 0px 50px;
+  }
+  #afui .section-dimension-22.cpad-3 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-22.cpad-10 {
+    padding: 0px 50px 0px 50px;
+  }
+  #afui .section-dimension-22.cpad-10 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-22.cpad-11 {
+    padding: 40px 50px 0px 50px;
+  }
+  #afui .section-dimension-22.cpad-11 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-22.cpad-6 {
+    padding: 0px 0px 40px 50px;
+  }
+  #afui .section-dimension-22.cpad-6 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-22.cpad-7 {
+    padding: 40px 0px 40px 50px;
+  }
+  #afui .section-dimension-22.cpad-7 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-22.cpad-14 {
+    padding: 0px 50px 40px 50px;
+  }
+  #afui .section-dimension-22.cpad-14 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-22.cpad-15 {
+    padding: 40px 50px 40px 50px;
+  }
+  #afui .section-dimension-22.cpad-15 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-22.cpad-0 {
+    padding: 0px 0px 0px 0px;
+  }
+  #afui .section-dimension-22.cpad-0 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+@media all {
+  #afui .section-dimension-23 .card-header {
+    height: 40px;
+  }
+  #afui .section-dimension-23 .card-footer {
+    height: 40px;
+  }
+  #afui .section-dimension-23 .card-left {
+    width: 50px;
+  }
+  #afui .section-dimension-23 .card-right {
+    width: 50px;
+  }
+  #afui .section-dimension-23 {
+    min-height: 100px;
+  }
+  #afui div.section-dimension-23.header-on-left .card-left {
+    top: 40px;
+  }
+  #afui div.section-dimension-23.header-on-left .card-header {
+    left: 0px;
+  }
+  #afui div.section-dimension-23.left-on-header .card-left {
+    top: 0px;
+  }
+  #afui div.section-dimension-23.left-on-header .card-header {
+    left: 50px;
+  }
+  #afui div.section-dimension-23.header-on-right .card-right {
+    top: 40px;
+  }
+  #afui div.section-dimension-23.header-on-right .card-header {
+    right: 0px;
+  }
+  #afui div.section-dimension-23.right-on-header .card-right {
+    top: 0px;
+  }
+  #afui div.section-dimension-23.right-on-header .card-header {
+    right: 50px;
+  }
+  #afui div.section-dimension-23.footer-on-left .card-left {
+    bottom: 40px;
+  }
+  #afui div.section-dimension-23.footer-on-left .card-footer {
+    left: 0px;
+  }
+  #afui div.section-dimension-23.left-on-footer .card-left {
+    bottom: 0px;
+  }
+  #afui div.section-dimension-23.left-on-footer .card-footer {
+    left: 50px;
+  }
+  #afui div.section-dimension-23.footer-on-right .card-right {
+    bottom: 40px;
+  }
+  #afui div.section-dimension-23.footer-on-right .card-footer {
+    right: 0px;
+  }
+  #afui div.section-dimension-23.right-on-footer .card-right {
+    bottom: 0px;
+  }
+  #afui div.section-dimension-23.right-on-footer .card-footer {
+    right: 50px;
+  }
+  #afui .section-dimension-23.cpad-1 {
+    padding: 40px 0px 0px 0px;
+  }
+  #afui .section-dimension-23.cpad-1 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-23.cpad-8 {
+    padding: 0px 50px 0px 0px;
+  }
+  #afui .section-dimension-23.cpad-8 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-23.cpad-9 {
+    padding: 40px 50px 0px 0px;
+  }
+  #afui .section-dimension-23.cpad-9 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-23.cpad-4 {
+    padding: 0px 0px 40px 0px;
+  }
+  #afui .section-dimension-23.cpad-4 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-23.cpad-5 {
+    padding: 40px 0px 40px 0px;
+  }
+  #afui .section-dimension-23.cpad-5 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-23.cpad-12 {
+    padding: 0px 50px 40px 0px;
+  }
+  #afui .section-dimension-23.cpad-12 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-23.cpad-13 {
+    padding: 40px 50px 40px 0px;
+  }
+  #afui .section-dimension-23.cpad-13 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-23.cpad-2 {
+    padding: 0px 0px 0px 50px;
+  }
+  #afui .section-dimension-23.cpad-2 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-23.cpad-3 {
+    padding: 40px 0px 0px 50px;
+  }
+  #afui .section-dimension-23.cpad-3 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-23.cpad-10 {
+    padding: 0px 50px 0px 50px;
+  }
+  #afui .section-dimension-23.cpad-10 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-23.cpad-11 {
+    padding: 40px 50px 0px 50px;
+  }
+  #afui .section-dimension-23.cpad-11 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-23.cpad-6 {
+    padding: 0px 0px 40px 50px;
+  }
+  #afui .section-dimension-23.cpad-6 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-23.cpad-7 {
+    padding: 40px 0px 40px 50px;
+  }
+  #afui .section-dimension-23.cpad-7 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-23.cpad-14 {
+    padding: 0px 50px 40px 50px;
+  }
+  #afui .section-dimension-23.cpad-14 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-23.cpad-15 {
+    padding: 40px 50px 40px 50px;
+  }
+  #afui .section-dimension-23.cpad-15 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-23.cpad-0 {
+    padding: 0px 0px 0px 0px;
+  }
+  #afui .section-dimension-23.cpad-0 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+@media all {
+  #afui .section-dimension-24 .card-header {
+    height: 40px;
+  }
+  #afui .section-dimension-24 .card-footer {
+    height: 40px;
+  }
+  #afui .section-dimension-24 .card-left {
+    width: 50px;
+  }
+  #afui .section-dimension-24 .card-right {
+    width: 50px;
+  }
+  #afui .section-dimension-24 {
+    min-height: 100px;
+  }
+  #afui div.section-dimension-24.header-on-left .card-left {
+    top: 40px;
+  }
+  #afui div.section-dimension-24.header-on-left .card-header {
+    left: 0px;
+  }
+  #afui div.section-dimension-24.left-on-header .card-left {
+    top: 0px;
+  }
+  #afui div.section-dimension-24.left-on-header .card-header {
+    left: 50px;
+  }
+  #afui div.section-dimension-24.header-on-right .card-right {
+    top: 40px;
+  }
+  #afui div.section-dimension-24.header-on-right .card-header {
+    right: 0px;
+  }
+  #afui div.section-dimension-24.right-on-header .card-right {
+    top: 0px;
+  }
+  #afui div.section-dimension-24.right-on-header .card-header {
+    right: 50px;
+  }
+  #afui div.section-dimension-24.footer-on-left .card-left {
+    bottom: 40px;
+  }
+  #afui div.section-dimension-24.footer-on-left .card-footer {
+    left: 0px;
+  }
+  #afui div.section-dimension-24.left-on-footer .card-left {
+    bottom: 0px;
+  }
+  #afui div.section-dimension-24.left-on-footer .card-footer {
+    left: 50px;
+  }
+  #afui div.section-dimension-24.footer-on-right .card-right {
+    bottom: 40px;
+  }
+  #afui div.section-dimension-24.footer-on-right .card-footer {
+    right: 0px;
+  }
+  #afui div.section-dimension-24.right-on-footer .card-right {
+    bottom: 0px;
+  }
+  #afui div.section-dimension-24.right-on-footer .card-footer {
+    right: 50px;
+  }
+  #afui .section-dimension-24.cpad-1 {
+    padding: 40px 0px 0px 0px;
+  }
+  #afui .section-dimension-24.cpad-1 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-24.cpad-8 {
+    padding: 0px 50px 0px 0px;
+  }
+  #afui .section-dimension-24.cpad-8 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-24.cpad-9 {
+    padding: 40px 50px 0px 0px;
+  }
+  #afui .section-dimension-24.cpad-9 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-24.cpad-4 {
+    padding: 0px 0px 40px 0px;
+  }
+  #afui .section-dimension-24.cpad-4 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-24.cpad-5 {
+    padding: 40px 0px 40px 0px;
+  }
+  #afui .section-dimension-24.cpad-5 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-24.cpad-12 {
+    padding: 0px 50px 40px 0px;
+  }
+  #afui .section-dimension-24.cpad-12 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-24.cpad-13 {
+    padding: 40px 50px 40px 0px;
+  }
+  #afui .section-dimension-24.cpad-13 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-24.cpad-2 {
+    padding: 0px 0px 0px 50px;
+  }
+  #afui .section-dimension-24.cpad-2 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-24.cpad-3 {
+    padding: 40px 0px 0px 50px;
+  }
+  #afui .section-dimension-24.cpad-3 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-24.cpad-10 {
+    padding: 0px 50px 0px 50px;
+  }
+  #afui .section-dimension-24.cpad-10 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-24.cpad-11 {
+    padding: 40px 50px 0px 50px;
+  }
+  #afui .section-dimension-24.cpad-11 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-24.cpad-6 {
+    padding: 0px 0px 40px 50px;
+  }
+  #afui .section-dimension-24.cpad-6 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-24.cpad-7 {
+    padding: 40px 0px 40px 50px;
+  }
+  #afui .section-dimension-24.cpad-7 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-24.cpad-14 {
+    padding: 0px 50px 40px 50px;
+  }
+  #afui .section-dimension-24.cpad-14 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-24.cpad-15 {
+    padding: 40px 50px 40px 50px;
+  }
+  #afui .section-dimension-24.cpad-15 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-24.cpad-0 {
+    padding: 0px 0px 0px 0px;
+  }
+  #afui .section-dimension-24.cpad-0 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+.uib-grid {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+.uib-grid > .uib-grid-row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+}
+.uib-grid > .uib-grid-row > .uib-grid-cell {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -o-flex;
+  display: flex;
+}
+.uib-grid > .uib-grid-row > .uib-grid-cell > * {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+  margin: 0 !important;
+  height: auto !important;
+}
+.uib-grid > .uib-grid-row > .uib-grid-cell > .button,
+.uib-grid > .uib-grid-row > .uib-grid-cell > [data-role="button"] {
+  padding: 0 !important;
+  display: -webkit-flex !important;
+  display: -moz-flex !important;
+  display: -ms-flexbox !important;
+  display: -o-flex !important;
+  display: flex !important;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+.uib-grid > .uib-grid-row > .uib-grid-cell > .table-thing {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -o-flex;
+  display: flex;
+}
+.uib-grid > .uib-grid-row > .uib-grid-cell > .table-thing > label.narrow-control {
+  display: none;
+}
+.uib-grid > .uib-grid-row > .uib-grid-cell > .table-thing > label.narrow-control + .wide-control {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+  height: auto !important;
+}
+.uib-grid > .uib-grid-row:first-child > .uib-grid-cell > *,
+.uib-grid > .uib-grid-row:first-child > .uib-grid-cell .wide-control {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.uib-grid > .uib-grid-row:first-child > .uib-grid-cell:not(:first-child) > *,
+.uib-grid > .uib-grid-row:first-child > .uib-grid-cell:not(:first-child) .wide-control {
+  border-top-left-radius: 0 !important;
+}
+.uib-grid > .uib-grid-row:first-child > .uib-grid-cell:not(:last-child) > *,
+.uib-grid > .uib-grid-row:first-child > .uib-grid-cell:not(:last-child) .wide-control {
+  border-top-right-radius: 0 !important;
+}
+.uib-grid > .uib-grid-row:not(:first-child):not(:last-child) > .uib-grid-cell > *,
+.uib-grid > .uib-grid-row:not(:first-child):not(:last-child) > .uib-grid-cell .wide-control {
+  border-radius: 0 !important;
+}
+.uib-grid > .uib-grid-row:last-child > .uib-grid-cell > *,
+.uib-grid > .uib-grid-row:last-child > .uib-grid-cell .wide-control {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+.uib-grid > .uib-grid-row:last-child > .uib-grid-cell:not(:first-child) > *,
+.uib-grid > .uib-grid-row:last-child > .uib-grid-cell:not(:first-child) .wide-control {
+  border-bottom-left-radius: 0 !important;
+}
+.uib-grid > .uib-grid-row:last-child > .uib-grid-cell:not(:last-child) > *,
+.uib-grid > .uib-grid-row:last-child > .uib-grid-cell:not(:last-child) .wide-control {
+  border-bottom-right-radius: 0 !important;
+}
+@media all {
+  #afui .grid-text,
+  #afui .grid-text * {
+    font-size: 4vmax !important;
+  }
+  #afui .grid-text,
+  #afui .grid-text * {
+    font-size: 4vmax !important;
+  }
+}
+@media all {
+  #afui .grid-height {
+    height: 300vh;
+  }
+}
+@media all {
+  #afui .flex-basis-22 > .widget {
+    flex-basis: calc(100% / 2);
+  }
+}
+@media all {
+  #afui .section-dimension-25 .card-header {
+    height: 40px;
+  }
+  #afui .section-dimension-25 .card-footer {
+    height: 40px;
+  }
+  #afui .section-dimension-25 .card-left {
+    width: 50px;
+  }
+  #afui .section-dimension-25 .card-right {
+    width: 50px;
+  }
+  #afui .section-dimension-25 {
+    min-height: 100px;
+  }
+  #afui div.section-dimension-25.header-on-left .card-left {
+    top: 40px;
+  }
+  #afui div.section-dimension-25.header-on-left .card-header {
+    left: 0px;
+  }
+  #afui div.section-dimension-25.left-on-header .card-left {
+    top: 0px;
+  }
+  #afui div.section-dimension-25.left-on-header .card-header {
+    left: 50px;
+  }
+  #afui div.section-dimension-25.header-on-right .card-right {
+    top: 40px;
+  }
+  #afui div.section-dimension-25.header-on-right .card-header {
+    right: 0px;
+  }
+  #afui div.section-dimension-25.right-on-header .card-right {
+    top: 0px;
+  }
+  #afui div.section-dimension-25.right-on-header .card-header {
+    right: 50px;
+  }
+  #afui div.section-dimension-25.footer-on-left .card-left {
+    bottom: 40px;
+  }
+  #afui div.section-dimension-25.footer-on-left .card-footer {
+    left: 0px;
+  }
+  #afui div.section-dimension-25.left-on-footer .card-left {
+    bottom: 0px;
+  }
+  #afui div.section-dimension-25.left-on-footer .card-footer {
+    left: 50px;
+  }
+  #afui div.section-dimension-25.footer-on-right .card-right {
+    bottom: 40px;
+  }
+  #afui div.section-dimension-25.footer-on-right .card-footer {
+    right: 0px;
+  }
+  #afui div.section-dimension-25.right-on-footer .card-right {
+    bottom: 0px;
+  }
+  #afui div.section-dimension-25.right-on-footer .card-footer {
+    right: 50px;
+  }
+  #afui .section-dimension-25.cpad-1 {
+    padding: 40px 0px 0px 0px;
+  }
+  #afui .section-dimension-25.cpad-1 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-25.cpad-8 {
+    padding: 0px 50px 0px 0px;
+  }
+  #afui .section-dimension-25.cpad-8 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-25.cpad-9 {
+    padding: 40px 50px 0px 0px;
+  }
+  #afui .section-dimension-25.cpad-9 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-25.cpad-4 {
+    padding: 0px 0px 40px 0px;
+  }
+  #afui .section-dimension-25.cpad-4 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-25.cpad-5 {
+    padding: 40px 0px 40px 0px;
+  }
+  #afui .section-dimension-25.cpad-5 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-25.cpad-12 {
+    padding: 0px 50px 40px 0px;
+  }
+  #afui .section-dimension-25.cpad-12 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-25.cpad-13 {
+    padding: 40px 50px 40px 0px;
+  }
+  #afui .section-dimension-25.cpad-13 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-25.cpad-2 {
+    padding: 0px 0px 0px 50px;
+  }
+  #afui .section-dimension-25.cpad-2 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-25.cpad-3 {
+    padding: 40px 0px 0px 50px;
+  }
+  #afui .section-dimension-25.cpad-3 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-25.cpad-10 {
+    padding: 0px 50px 0px 50px;
+  }
+  #afui .section-dimension-25.cpad-10 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-25.cpad-11 {
+    padding: 40px 50px 0px 50px;
+  }
+  #afui .section-dimension-25.cpad-11 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-25.cpad-6 {
+    padding: 0px 0px 40px 50px;
+  }
+  #afui .section-dimension-25.cpad-6 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-25.cpad-7 {
+    padding: 40px 0px 40px 50px;
+  }
+  #afui .section-dimension-25.cpad-7 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-25.cpad-14 {
+    padding: 0px 50px 40px 50px;
+  }
+  #afui .section-dimension-25.cpad-14 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-25.cpad-15 {
+    padding: 40px 50px 40px 50px;
+  }
+  #afui .section-dimension-25.cpad-15 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-25.cpad-0 {
+    padding: 0px 0px 0px 0px;
+  }
+  #afui .section-dimension-25.cpad-0 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+@media all {
+  #afui .section-dimension-26 .card-header {
+    height: 40px;
+  }
+  #afui .section-dimension-26 .card-footer {
+    height: 40px;
+  }
+  #afui .section-dimension-26 .card-left {
+    width: 50px;
+  }
+  #afui .section-dimension-26 .card-right {
+    width: 50px;
+  }
+  #afui .section-dimension-26 {
+    min-height: 100px;
+  }
+  #afui div.section-dimension-26.header-on-left .card-left {
+    top: 40px;
+  }
+  #afui div.section-dimension-26.header-on-left .card-header {
+    left: 0px;
+  }
+  #afui div.section-dimension-26.left-on-header .card-left {
+    top: 0px;
+  }
+  #afui div.section-dimension-26.left-on-header .card-header {
+    left: 50px;
+  }
+  #afui div.section-dimension-26.header-on-right .card-right {
+    top: 40px;
+  }
+  #afui div.section-dimension-26.header-on-right .card-header {
+    right: 0px;
+  }
+  #afui div.section-dimension-26.right-on-header .card-right {
+    top: 0px;
+  }
+  #afui div.section-dimension-26.right-on-header .card-header {
+    right: 50px;
+  }
+  #afui div.section-dimension-26.footer-on-left .card-left {
+    bottom: 40px;
+  }
+  #afui div.section-dimension-26.footer-on-left .card-footer {
+    left: 0px;
+  }
+  #afui div.section-dimension-26.left-on-footer .card-left {
+    bottom: 0px;
+  }
+  #afui div.section-dimension-26.left-on-footer .card-footer {
+    left: 50px;
+  }
+  #afui div.section-dimension-26.footer-on-right .card-right {
+    bottom: 40px;
+  }
+  #afui div.section-dimension-26.footer-on-right .card-footer {
+    right: 0px;
+  }
+  #afui div.section-dimension-26.right-on-footer .card-right {
+    bottom: 0px;
+  }
+  #afui div.section-dimension-26.right-on-footer .card-footer {
+    right: 50px;
+  }
+  #afui .section-dimension-26.cpad-1 {
+    padding: 40px 0px 0px 0px;
+  }
+  #afui .section-dimension-26.cpad-1 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-26.cpad-8 {
+    padding: 0px 50px 0px 0px;
+  }
+  #afui .section-dimension-26.cpad-8 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-26.cpad-9 {
+    padding: 40px 50px 0px 0px;
+  }
+  #afui .section-dimension-26.cpad-9 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-26.cpad-4 {
+    padding: 0px 0px 40px 0px;
+  }
+  #afui .section-dimension-26.cpad-4 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-26.cpad-5 {
+    padding: 40px 0px 40px 0px;
+  }
+  #afui .section-dimension-26.cpad-5 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-26.cpad-12 {
+    padding: 0px 50px 40px 0px;
+  }
+  #afui .section-dimension-26.cpad-12 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-26.cpad-13 {
+    padding: 40px 50px 40px 0px;
+  }
+  #afui .section-dimension-26.cpad-13 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 40px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-26.cpad-2 {
+    padding: 0px 0px 0px 50px;
+  }
+  #afui .section-dimension-26.cpad-2 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-26.cpad-3 {
+    padding: 40px 0px 0px 50px;
+  }
+  #afui .section-dimension-26.cpad-3 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-26.cpad-10 {
+    padding: 0px 50px 0px 50px;
+  }
+  #afui .section-dimension-26.cpad-10 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-26.cpad-11 {
+    padding: 40px 50px 0px 50px;
+  }
+  #afui .section-dimension-26.cpad-11 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 0px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-26.cpad-6 {
+    padding: 0px 0px 40px 50px;
+  }
+  #afui .section-dimension-26.cpad-6 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-26.cpad-7 {
+    padding: 40px 0px 40px 50px;
+  }
+  #afui .section-dimension-26.cpad-7 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-26.cpad-14 {
+    padding: 0px 50px 40px 50px;
+  }
+  #afui .section-dimension-26.cpad-14 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-26.cpad-15 {
+    padding: 40px 50px 40px 50px;
+  }
+  #afui .section-dimension-26.cpad-15 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    bottom: 40px;
+    left: 50px;
+    height: auto !important;
+    width: auto !important;
+  }
+  #afui .section-dimension-26.cpad-0 {
+    padding: 0px 0px 0px 0px;
+  }
+  #afui .section-dimension-26.cpad-0 > .widget-divider:only-of-type {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+@media all {
+  #afui .default-sprite-button div.uib-sprite {
+    background-image: url(../images/Exclaim.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media all {
+  #afui .hover-sprite-button:hover div.uib-sprite {
+    background-image: url(../images/Checkmark.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media all {
+  #afui .active-sprite-button:active div.uib-sprite {
+    background-image: url(../images/X.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media all {
+  #afui .sprite-sizing {
+    height: 135px !important;
+    width: 135px !important;
+    -webkit-flex: 0 0 auto !important;
+    -moz-flex: 0 0 auto !important;
+    -ms-flex: 0 0 auto !important;
+    -o-flex: 0 0 auto !important;
+    flex: 0 0 auto !important;
   }
 }
