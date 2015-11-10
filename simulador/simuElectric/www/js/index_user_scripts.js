@@ -1,13 +1,140 @@
 (function()
+
 {
  "use strict";
- /*
-   hook up event handlers 
- */
- function register_event_handlers()
- {
+
+    function register_event_handlers()
+    {
     
+                      
+        $(document).on("click", "#monocalcular", function(evt)
+        {
+
+         var lecActual = document.getElementById('LecturaActual');
+         var lecAnterior = document.getElementById('LecturaAnterior');
+         var igv = 0.18;
+         var consumo = 0;
+         var mantenimiento = 0.67;
+         var costoKWh = 0.6593;
+         var electrificacion = 0.42;
+         var  alum_public= 0.3623;
+ 
+         var cargofijo = 3.59;
+         var intereses = 0.08;
+
+        
+           if((lecAnterior.value)*1 < (lecActual.value)*1)
+           {  
+         
+             var diferenciaLectura = (lecActual.value)*1 - (lecAnterior.value)*1;
+            
+
+               if (diferenciaLectura<=30) {
+                 
+                 alert("USTED TIENE LA POSIBILIDAD DE AFILIARSE AL FISE");
+
+                 var energia = diferenciaLectura * costoKWh;
+                 var costoAlumbrado= 1 * alum_public;
+                
+                
+                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
+                 var sbtt= subtotal.toFixed(2);
+                 var total = subtotal + subtotal * igv;
+                 var TotalPago = total + electrificacion;
+                 var ppgg= TotalPago.toFixed(2);
+                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+
+                }
+
+               if (30>diferenciaLectura<=100) {
+                 
+                 
+                 alert("SU CONSUMO ES MAYOR QUE 30 KW Y MENOR 100 KW");
+
+                 var energia = diferenciaLectura * costoKWh;
+                 var costoAlumbrado= 7 * alum_public;
+                
+                
+                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
+                 var sbtt= subtotal.toFixed(2);
+                 var total = subtotal + subtotal * igv;
+                 var TotalPago = total + electrificacion;
+                 var ppgg= TotalPago.toFixed(2);
+                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                 
+                }
+
+               if (100>diferenciaLectura<=150) {
+                 
+                 
+                 alert("SU CONSUMO ES MAYOR QUE 30 KW Y MENOR 100 KW");
+
+                 var energia = diferenciaLectura * costoKWh;
+                 var costoAlumbrado= 12 * alum_public;
+                
+                
+                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
+                 var sbtt= subtotal.toFixed(2);
+                 var total = subtotal + subtotal * igv;
+                 var TotalPago = total + electrificacion;
+                 var ppgg= TotalPago.toFixed(2);
+                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                 
+                }
+
+
+            }
+
+            if((lecAnterior.value)*1==(lecActual.value)*1)
+
+           {  
+             alert("SU CONSUMO ES IGUAL");
+             var diferenciaLectura = (lecActual.value)*1 - (lecAnterior.value)*1;         
+             var costoAlumbrado= 1 * alum_public;
+             var subtotal = costoAlumbrado + cargofijo + mantenimiento;
+             var sbtt= subtotal.toFixed(2);
+             var total = subtotal + subtotal * igv;
+             var TotalPago = total + electrificacion;
+             var ppgg= TotalPago.toFixed(2);
+             $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+            }        
+
+
+            if((lecAnterior.value)*1 > (lecActual.value)*1)
+
+           {  
+                alert("DATOS INCORRECTOS");
+                var lecActual = document.getElementById('LecturaActual');
+                var lecAnterior = document.getElementById('LecturaAnterior');     
+                    
+                document.getElementById('idimprimir').innerHTML='VUELVA A INGRESAR LOS DATOS ';
+                lecActual.value='';
+                lecAnterior.value=''; 
+            } 
+           
+                       
+
+ 
+          //activate_page("#mainpage"); 
+        
+        });
     
- }
- document.addEventListener("app.Ready", register_event_handlers, false);
+        $(document).on("click", "#monocancelar", function(evt)
+        {
+         alert("DATOS CANCELADOS");
+         var lecActual = document.getElementById('LecturaActual');
+         var lecAnterior = document.getElementById('LecturaAnterior');     
+                    
+         document.getElementById('idimprimir').innerHTML='SE CANCELO LA OPERACION ';
+         lecActual.value='';
+         lecAnterior.value='';   
+        });   
+
+
+ 
+    }
+
+   document.addEventListener("app.Ready", register_event_handlers, false);
 })();
+
+

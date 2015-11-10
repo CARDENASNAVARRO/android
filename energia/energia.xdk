@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "appDesigner",
       "projectGuid": "5fdd5281-edb4-44b3-a96f-0c9991f77e9c",
-      "lastModifiedDate": 1446667528579,
+      "lastModifiedDate": 1447128643402,
       "creationDate": 1434671810692
     },
     "XDK-app-designer": "true",
@@ -28,12 +28,7 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.device",
-        "permissions": {},
-        "topLevel": true,
-        "checksum": "3f979ead",
-        "gitref": "",
-        "name": "Device",
-        "description": "Cordova Device Plugin"
+        "permissions": {}
       },
       {
         "id": "org.apache.cordova.splashscreen",
@@ -45,12 +40,7 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.splashscreen",
-        "permissions": {},
-        "topLevel": true,
-        "checksum": "fb21842c",
-        "gitref": "",
-        "name": "Splashscreen",
-        "description": "Cordova Splashscreen Plugin"
+        "permissions": {}
       },
       {
         "id": "org.apache.cordova.device-motion",
@@ -62,12 +52,7 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.device-motion",
-        "permissions": {},
-        "topLevel": true,
-        "checksum": "ed8231ab",
-        "gitref": "",
-        "name": "Device Motion",
-        "description": "Cordova Device Motion Plugin"
+        "permissions": {}
       },
       {
         "id": "org.apache.cordova.camera",
@@ -79,16 +64,7 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.camera",
-        "permissions": {
-          "android:name": [
-            "android.permission.WRITE_EXTERNAL_STORAGE"
-          ]
-        },
-        "topLevel": true,
-        "checksum": "a7855f34",
-        "gitref": "",
-        "name": "Camera",
-        "description": "Cordova Camera Plugin"
+        "permissions": {}
       }
     ],
     "buildConfigurations": {
@@ -101,7 +77,7 @@
           "android-targetSdkVersion": "19",
           "android-installLocation": "auto"
         },
-        "isActive_": false,
+        "isActive_": true,
         "appName_": "energia",
         "appID_": "xdk.intel.blank.ad.template.crosswalk",
         "appAccess_": {
