@@ -132,25 +132,24 @@
                 </a>
             </div>
             <div class="upage vertical-col left panel fondmono" id="monofasico" data-header="af-header-0" data-footer="none">
-
                 <div class="widget uib_w_6 d-margins simumono" data-uib="media/text" data-ver="0">
                     <div class="widget-container left-receptacle"></div>
                     <div class="widget-container right-receptacle"></div>
                     <div>
-                        <p>Simulador de Red Monofasico</p>
+                        <p>Simulador de Red Monofasico fredy</p>
                     </div>
                 </div>
                 <div class="table-thing with-label widget uib_w_7 d-margins labelmono" data-uib="app_framework/textarea" data-ver="1">
-                    <label class="narrow-control label-inline" for="LecturaActual">Lectura Actual</label>
+                    <label class="narrow-control label-inline" for="LecturaActual" required>Lectura Actual</label>
 
-                    <textarea class="wide-control" rows="2" wrap="soft" placeholder="Ingrese  la lectura Actual" id="LecturaActual"></textarea>
+                    <input type="number" class="wide-control" rows="2" wrap="soft" placeholder="Ingrese  la lectura Actual" id="LecturaActual">
                 </div>
                 <div class="table-thing with-label widget uib_w_8 d-margins labelmono" data-uib="app_framework/textarea" data-ver="1">
-                    <label class="narrow-control label-inline" for="LecturaAnterior">Lectura Anterior</label>
+                    <label class="narrow-control label-inline" for="LecturaAnterior" required>Lectura Anterior</label>
 
-                    <textarea class="wide-control" placeholder="Ingrese  la lectura Anterior" rows="2" wrap="soft" id="LecturaAnterior"></textarea>
-                </div><a class="button widget uib_w_9 d-margins txtmonof icon busy red" data-uib="app_framework/button" data-ver="1" id="monocalcular" href="#monofasico" data-transition="fade">Calcular</a><a class="button widget uib_w_10 d-margins icon trash orange"
-                data-uib="app_framework/button" data-ver="1" id="monocancelar" href="#monofasico" data-transition="fade">Cancelar</a>
+                    <input type="number" class="wide-control" placeholder="Ingrese  la lectura Anterior" rows="2" wrap="soft" id="LecturaAnterior">
+                </div><a class="button widget uib_w_9 d-margins txtmonof icon busy red" data-uib="app_framework/button" data-ver="1" id="monocalcular" data-transition="fade" style="width: 100%">Calcular</a><a class="button widget uib_w_10 d-margins icon trash orange"
+                data-uib="app_framework/button" data-ver="1" id="monocancelar" href="#monofasico" data-transition="fade" style="width: 100%">Cancelar</a>
                 <a class="button widget uib_w_11 d-margins hide icon question gray" data-uib="app_framework/button" data-ver="1" id="otrosmonof" href="#consmonof" data-transition="fade">Otros</a>
                 <div class="widget uib_w_68 d-margins" data-uib="media/text" data-ver="0" id="idimprimir">
                     <div class="widget-container left-receptacle"></div>
@@ -183,14 +182,16 @@
                 <div class="uib-grid widget uib_w_22 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="1">
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_23 d-margins" data-uib="media/graphic_button" data-ver="0" id="cocina">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_23 d-margins" data-uib="media/graphic_button" data-ver="0" id="cocina" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/cocina.png">
 
                                 <span class="uib-caption"></span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_24 d-margins" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_24 d-margins" data-uib="media/graphic_button" data-ver="0" id="reefriger" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/refri.png">
 
                                 <span class="uib-caption"></span>
@@ -200,14 +201,16 @@
 
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_25 d-margins" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_25 d-margins" data-uib="media/graphic_button" data-ver="0" id="cafetera" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/cafetera.png">
 
                                 <span class="uib-caption"></span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_28 d-margins" data-uib="media/graphic_button" data-ver="0" id="licuadora">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_28 d-margins" data-uib="media/graphic_button" data-ver="0" id="licuadora" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/licuadora.png">
                                 <span class="uib-caption"></span>
                             </a>
@@ -215,13 +218,15 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_26 d-margins" data-uib="media/graphic_button" data-ver="0" id="batidora">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_26 d-margins" data-uib="media/graphic_button" data-ver="0" id="batidora" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/batidora.png">
                                 <span class="uib-caption"></span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_29 d-margins" data-uib="media/graphic_button" data-ver="0" id="hervidora">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_29 d-margins" data-uib="media/graphic_button" data-ver="0" id="hervidora" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/hervidora.png">
                                 <span class="uib-caption"></span>
                             </a>
@@ -229,13 +234,15 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_27 d-margins" data-uib="media/graphic_button" data-ver="0" id="horno">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_27 d-margins" data-uib="media/graphic_button" data-ver="0" id="horno" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/horno.png">
                                 <span class="uib-caption"></span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_30 d-margins" data-uib="media/graphic_button" data-ver="0" id="olla">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_30 d-margins" data-uib="media/graphic_button" data-ver="0" id="olla" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/olla.png">
                                 <span class="uib-caption"></span>
                             </a>
@@ -244,14 +251,16 @@
 
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_31 d-margins" data-uib="media/graphic_button" data-ver="0" id="lavadora">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_31 d-margins" data-uib="media/graphic_button" data-ver="0" id="lavadora" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/Lavadora.png">
 
                                 <span class="uib-caption"></span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_32 d-margins" data-uib="media/graphic_button" data-ver="0" id="plancha">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_32 d-margins" data-uib="media/graphic_button" data-ver="0" id="plancha" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/plancha.png">
 
                                 <span class="uib-caption"></span>
@@ -260,14 +269,16 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_33 d-margins" data-uib="media/graphic_button" data-ver="0" id="aspiradora">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_33 d-margins" data-uib="media/graphic_button" data-ver="0" id="aspiradora" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/aspiradora.png">
 
                                 <span class="uib-caption"></span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_34 d-margins" data-uib="media/graphic_button" data-ver="0" id="aire">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_34 d-margins" data-uib="media/graphic_button" data-ver="0" id="aire" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/aire.png">
 
                                 <span class="uib-caption"></span>
@@ -276,14 +287,16 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_35 d-margins" data-uib="media/graphic_button" data-ver="0" id="tv">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_35 d-margins" data-uib="media/graphic_button" data-ver="0" id="tv" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/tv.png">
 
                                 <span class="uib-caption"></span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_36 d-margins" data-uib="media/graphic_button" data-ver="0" id="laptop">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_36 d-margins" data-uib="media/graphic_button" data-ver="0" id="laptop" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/laptop.png">
 
                                 <span class="uib-caption"></span>
@@ -292,14 +305,17 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_37 d-margins" data-uib="media/graphic_button" data-ver="0" id="game">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_37 d-margins" data-uib="media/graphic_button" data-ver="0" id="game" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/dvd.png">
 
                                 <span class="uib-caption"></span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_38 d-margins" data-uib="media/graphic_button" data-ver="0" id="equiposonido">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_38 d-margins" data-uib="media/graphic_button" data-ver="0" id="equiposonido" data-transition="fade"
+                            href="#detallemonofa">
+                                <img src="images/EquipoSonido.png">
 
                                 <span class="uib-caption"></span>
                             </a>
@@ -307,7 +323,8 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_39 d-margins" data-uib="media/graphic_button" data-ver="0" id="impresora">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_39 d-margins" data-uib="media/graphic_button" data-ver="0" id="impresora" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/game.png">
 
                                 <span class="uib-caption"></span>
@@ -323,14 +340,16 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_41 d-margins" data-uib="media/graphic_button" data-ver="0" id="foco">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_41 d-margins" data-uib="media/graphic_button" data-ver="0" id="foco" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/foco.png">
 
                                 <span class="uib-caption"></span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_42 d-margins" data-uib="media/graphic_button" data-ver="0" id="ducha">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_42 d-margins" data-uib="media/graphic_button" data-ver="0" id="ducha" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/ducha.png">
 
                                 <span class="uib-caption"></span>
@@ -339,14 +358,16 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_43 d-margins" data-uib="media/graphic_button" data-ver="0" id="therma">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_43 d-margins" data-uib="media/graphic_button" data-ver="0" id="therma" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/therma.png">
 
                                 <span class="uib-caption"></span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_44 d-margins" data-uib="media/graphic_button" data-ver="0" id="secadora">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_44 d-margins" data-uib="media/graphic_button" data-ver="0" id="secadora" href="#detallemonofa"
+                            data-transition="fade">
                                 <img src="images/secadora.png">
 
                                 <span class="uib-caption"></span>
@@ -355,19 +376,21 @@
                     </div>
 
                 </div>
-                <a class="button widget uib_w_67 d-margins icon magnifier red" data-uib="app_framework/button" data-ver="1" id="consultarmono">Consultar</a>
+                <a class="button widget uib_w_67 d-margins icon magnifier red" data-uib="app_framework/button" data-ver="1" id="consultarmono">Calcular</a>
             </div>
             <div class="upage vertical-col left panel" id="constrifa" data-header="af-header-3" data-footer="none">
                 <div class="uib-grid widget uib_w_47 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="1">
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_48 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_48 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/afiladora.png">
                                 <span class="uib-caption">Afiladora</span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_49 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_49 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/cepillo.png">
                                 <span class="uib-caption">Cepilladora</span>
                             </a>
@@ -375,13 +398,15 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_50 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_50 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/bonba.png">
                                 <span class="uib-caption">Electrobomba</span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_51 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_51 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/compresora.png">
                                 <span class="uib-caption">Compresor</span>
                             </a>
@@ -389,13 +414,15 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_54 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_54 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/rectificadora.png">
                                 <span class="uib-caption">Rec. Culatas</span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_53 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_53 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/rengrosadora.png">
                                 <span class="uib-caption">Rengrosadora</span>
                             </a>
@@ -403,13 +430,15 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_55 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_55 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/taladrop.png">
                                 <span class="uib-caption">Taladro Ped.</span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_56 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_56 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/taladro.png">
 
                                 <span class="uib-caption">Taladro de mano</span>
@@ -418,14 +447,16 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_57 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_57 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/molino.png">
 
                                 <span class="uib-caption">Trituradora</span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_58 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_58 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/molino1.png">
                                 <span class="uib-caption">Molino</span>
                             </a>
@@ -433,13 +464,15 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_59 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_59 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/fresa.png">
                                 <span class="uib-caption">Fresa Multi.</span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_60 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_60 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/torno+.png">
                                 <span class="uib-caption">Torno</span>
                             </a>
@@ -447,13 +480,15 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_61 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_61 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/torno.png">
                                 <span class="uib-caption">Torno Madera</span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_62 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_62 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/sierra.png">
 
                                 <span class="uib-caption">Disco Circular</span>
@@ -462,14 +497,16 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_63 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_63 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/sierramano.png">
 
                                 <span class="uib-caption">Radian</span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_64 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_64 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/solder.png">
                                 <span class="uib-caption">Maq. Soldar</span>
                             </a>
@@ -477,14 +514,16 @@
                     </div>
                     <div class="uib-grid-row">
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_65 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_65 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            href="#detalletrifa" data-transition="fade">
                                 <img src="images/cortadora.png">
 
                                 <span class="uib-caption">Cortadora</span>
                             </a>
                         </div>
                         <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_66 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_66 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                            data-transition="fade">
                                 <img src="images/imprenta.png">
                                 <span class="uib-caption">Imprenta</span>
                             </a>
@@ -495,6 +534,7 @@
                         <div class="uib-grid-cell widget-container"></div>
                     </div>
                 </div>
+                <a class="button widget uib_w_79 d-margins icon busy orange" data-uib="app_framework/button" data-ver="1" id="consultar3">Consultar</a>
             </div>
             <div class="upage vertical-col left panel fonddetaltrif" id="detallemonofa" data-header="af-header-4" data-footer="none">
                 <div class="table-thing with-label widget uib_w_70 d-margins labelmono" data-uib="app_framework/textarea" data-ver="1">
