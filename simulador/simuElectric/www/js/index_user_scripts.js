@@ -67,12 +67,29 @@
                if (100>diferenciaLectura<=150) {
                  
                  
-                 alert("SU CONSUMO ES MAYOR QUE 30 KW Y MENOR 100 KW");
+                 alert("SU CONSUMO ES MAYOR QUE 100 KW Y MENOR 150 KW");
 
                  var energia = diferenciaLectura * costoKWh;
                  var costoAlumbrado= 12 * alum_public;
                 
                 
+                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
+                 var sbtt= subtotal.toFixed(2);
+                 var total = subtotal + subtotal * igv;
+                 var TotalPago = total + electrificacion;
+                 var ppgg= TotalPago.toFixed(2);
+                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                 
+                }
+
+               if (150>diferenciaLectura<=250) {
+                 
+                 
+                 alert("SU CONSUMO ES MAYOR QUE 150 KW Y MENOR 250 KW");
+
+                 var energia = diferenciaLectura * costoKWh;
+                 var costoAlumbrado= 25 * alum_public;
+                                
                  var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
                  var sbtt= subtotal.toFixed(2);
                  var total = subtotal + subtotal * igv;
