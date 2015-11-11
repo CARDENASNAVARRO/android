@@ -33,20 +33,20 @@
                  
                  alert("USTED TIENE LA POSIBILIDAD DE AFILIARSE AL FISE");
 
-                 var energia = diferenciaLectura * costoKWh;
+                 var energia = diferenciaLectura* costoKWh;
                  var costoAlumbrado= 1 * alum_public;
                 
-                
-                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
-                 var sbtt= subtotal.toFixed(2);
+                var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
+                   
+                 var sbtt1= subtotal.toFixed(3);
                  var total = subtotal + subtotal * igv;
                  var TotalPago = total + electrificacion;
-                 var ppgg= TotalPago.toFixed(2);
-                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                 var ppgg1= TotalPago.toFixed(3);
+                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt1 + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg1+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
 
                 }
 
-               if (30>diferenciaLectura<=100) {
+               /*if (30>diferenciaLectura<=100) {
                  
                  
                  var energia = diferenciaLectura * costoKWh;
@@ -54,11 +54,11 @@
                 
                 
                  var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
-                 var sbtt= subtotal.toFixed(2);
+                 var sbtt2= subtotal.toFixed(2);
                  var total = subtotal + subtotal * igv;
                  var TotalPago = total + electrificacion;
-                 var ppgg= TotalPago.toFixed(2);
-                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                 var ppgg2= TotalPago.toFixed(2);
+                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt2 + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg2+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
                  
                 }
 
@@ -212,7 +212,7 @@
                  var ppgg= TotalPago.toFixed(2);
                  $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
                  
-                }
+                }*/
 
 
 

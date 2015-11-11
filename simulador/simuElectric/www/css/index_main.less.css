@@ -332,7 +332,7 @@ body:not(#afui) .upage-outer {
 }
 @media all {
   #afui .default-image-sizing > img {
-    width: 150px;
+    width: 130px;
   }
 }
 @media all {
