@@ -49,8 +49,6 @@
                if (30>diferenciaLectura<=100) {
                  
                  
-                 alert("SU CONSUMO ES MAYOR QUE 30 KW Y MENOR 100 KW");
-
                  var energia = diferenciaLectura * costoKWh;
                  var costoAlumbrado= 7 * alum_public;
                 
@@ -66,9 +64,6 @@
 
                if (100>diferenciaLectura<=150) {
                  
-                 
-                 alert("SU CONSUMO ES MAYOR QUE 100 KW Y MENOR 150 KW");
-
                  var energia = diferenciaLectura * costoKWh;
                  var costoAlumbrado= 12 * alum_public;
                 
@@ -82,11 +77,8 @@
                  
                 }
 
-               if (150>diferenciaLectura<=250) {
-                 
-                 
-                 alert("SU CONSUMO ES MAYOR QUE 150 KW Y MENOR 250 KW");
-
+               if (150>diferenciaLectura<=300) {
+                                
                  var energia = diferenciaLectura * costoKWh;
                  var costoAlumbrado= 25 * alum_public;
                                 
@@ -98,6 +90,130 @@
                  $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
                  
                 }
+                if (300>diferenciaLectura<=500) {
+                 
+                 var energia = diferenciaLectura * costoKWh;
+                 var costoAlumbrado= 35 * alum_public;
+                                
+                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
+                 var sbtt= subtotal.toFixed(2);
+                 var total = subtotal + subtotal * igv;
+                 var TotalPago = total + electrificacion;
+                 var ppgg= TotalPago.toFixed(2);
+                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                 
+                }
+                if (500>diferenciaLectura<=750) {
+                 
+                 var energia = diferenciaLectura * costoKWh;
+                 var costoAlumbrado= 70* alum_public;
+                                
+                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
+                 var sbtt= subtotal.toFixed(2);
+                 var total = subtotal + subtotal * igv;
+                 var TotalPago = total + electrificacion;
+                 var ppgg= TotalPago.toFixed(2);
+                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                 
+                }
+               if (750>diferenciaLectura<=1000) {
+                 
+                 var energia = diferenciaLectura * costoKWh;
+                 var costoAlumbrado= 80 * alum_public;
+                                
+                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
+                 var sbtt= subtotal.toFixed(2);
+                 var total = subtotal + subtotal * igv;
+                 var TotalPago = total + electrificacion;
+                 var ppgg= TotalPago.toFixed(2);
+                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                 
+                }
+                if (1000>diferenciaLectura<=1500) {
+                 
+                 var energia = diferenciaLectura * costoKWh;
+                 var costoAlumbrado= 120 * alum_public;
+                                
+                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
+                 var sbtt= subtotal.toFixed(2);
+                 var total = subtotal + subtotal * igv;
+                 var TotalPago = total + electrificacion;
+                 var ppgg= TotalPago.toFixed(2);
+                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                 
+                }
+               if (1500>diferenciaLectura<=3000) {
+                                
+                 
+                 var energia = diferenciaLectura * costoKWh;
+                 var costoAlumbrado= 140* alum_public;
+                                
+                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
+                 var sbtt= subtotal.toFixed(2);
+                 var total = subtotal + subtotal * igv;
+                 var TotalPago = total + electrificacion;
+                 var ppgg= TotalPago.toFixed(2);
+                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                 
+                }
+
+               if (3000>diferenciaLectura<=5000) {
+                                
+                 
+                 var energia = diferenciaLectura * costoKWh;
+                 var costoAlumbrado= 150* alum_public;
+                                
+                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
+                 var sbtt= subtotal.toFixed(2);
+                 var total = subtotal + subtotal * igv;
+                 var TotalPago = total + electrificacion;
+                 var ppgg= TotalPago.toFixed(2);
+                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                 
+                }
+               if (5000>diferenciaLectura<=7500) {
+                                
+                 
+                 var energia = diferenciaLectura * costoKWh;
+                 var costoAlumbrado= 250* alum_public;
+                                
+                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
+                 var sbtt= subtotal.toFixed(2);
+                 var total = subtotal + subtotal * igv;
+                 var TotalPago = total + electrificacion;
+                 var ppgg= TotalPago.toFixed(2);
+                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                 
+                }
+               if (7500>diferenciaLectura<=10000) {
+                                
+                 
+                 var energia = diferenciaLectura * costoKWh;
+                 var costoAlumbrado= 300* alum_public;
+                                
+                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
+                 var sbtt= subtotal.toFixed(2);
+                 var total = subtotal + subtotal * igv;
+                 var TotalPago = total + electrificacion;
+                 var ppgg= TotalPago.toFixed(2);
+                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                 
+                }
+               if (diferenciaLectura>10000) {
+                                
+                 
+                 var energia = diferenciaLectura * costoKWh;
+                 var costoAlumbrado= 350* alum_public;
+                                
+                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
+                 var sbtt= subtotal.toFixed(2);
+                 var total = subtotal + subtotal * igv;
+                 var TotalPago = total + electrificacion;
+                 var ppgg= TotalPago.toFixed(2);
+                 $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                 
+                }
+
 
 
             }
