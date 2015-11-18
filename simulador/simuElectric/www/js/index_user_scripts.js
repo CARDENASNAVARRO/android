@@ -453,20 +453,16 @@
 
     });
 
- 
-
-
-    $(document).on("click", "#consultarmono", function(evt)
+     $(document).on("click", "#consultarmono", function(evt)
     {   alert('consultar mono') ;
         
         for (var i = 0; i < equipos.length; i++) {
 
-            $("#idtxtresultado").append('<div style="color:blue">Nombre Equipo: '+equipos[i].nombre+'</div>'+'Cantidad de equipo:'+equipos[i].c+'<br>'+'Potencia(watts):'+equipos[i].p +'<br>'+'Tiempo de uso:'+ equipos[i].t+' Hrs<br>'+'<div style="color:blue">Costo por mes: S/.'+equipos[i].monto+'</div><br>');
+            $("#idresultado").append('<div style="color:blue">Nombre Equipo: '+equipos[i].nombre+'</div>'+'Cantidad de equipo:'+equipos[i].c+'<br>'+'Potencia(watts):'+equipos[i].p +'<br>'+'Tiempo de uso:'+ equipos[i].t+' Hrs<br>'+'<div style="color:blue">Costo por mes: S/.'+equipos[i].monto+'</div><br>');
         };
-        $("#idtxtresultado").append('<div style="color:blue" >Monto Total: S/.'+montoTotal+'</div>');
+        $("#idresultado").append('<div style="color:blue" >Monto Total: S/.'+montoTotal+'</div>');
     
     });
-
 
     function equiposGasto(cantidad,potencia,tiempo){
         
