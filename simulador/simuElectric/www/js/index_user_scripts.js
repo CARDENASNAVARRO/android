@@ -454,7 +454,7 @@
     });
 
      $(document).on("click", "#consultarmono", function(evt)
-    {   alert('consultar mono') ;
+    {   //alert('consultar mono') ;
         
         for (var i = 0; i < equipos.length; i++) {
 
@@ -480,7 +480,7 @@
         equipos.push(equipo);
 
         montoTotal += montoTotalArtefacto;
-        //alert(montoTotalArtefacto);
+        alert(montoTotalArtefacto);
     }
 
 
@@ -488,7 +488,7 @@
 
 
 
-        ////////////////////////RED  TRIFASICO////////////////////////
+        ////////////////////////CALCULOS  DE RED  TRIFASICO////////////////////////
         //button calcular trifasico
         $(document).on("click", "#calcula", function(evt)
         {
@@ -526,10 +526,11 @@
          else {
             alert("Datos incorrectos vuelva ingresar");
 
-
-         actual3.value='';
-         anterior3.value=''; 
-
+            var actual3 = document.getElementById('LecActual3');
+            var anterior3= document.getElementById('LecAnterior3')
+            document.getElementById('salida').innerHTML='VUELVA A INGRESAR LOS DATOS ';
+            actual3.value='';
+            anterior3.value=''; 
 
             }
         });
@@ -549,7 +550,167 @@
          anterior3.value='';   
         
     });
- 
+
+///button de  consumo trifasico//
+
+     $(document).on("click", "#afiladora", function(evt)
+      {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "AFILADORA HERRAMIENTAS "
+        div.textContent = nombreEquipo;
+
+      });
+        //BUTTON REFRI
+     $(document).on("click", "#cepillaadora", function(evt)
+     {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "CEPILLADORA"
+        div.textContent = nombreEquipo;
+
+     });
+
+    $(document).on("click", "#electrobomba", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "BOMBA DE AGUA"
+        div.textContent = nombreEquipo;
+
+    });
+
+    $(document).on("click", "#compresor", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "COMPRESORA"
+        div.textContent = nombreEquipo;
+
+    });
+    $(document).on("click", "#rculatas", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "RECTIFICADOR CULATAS"
+        div.textContent = nombreEquipo;
+
+    });
+
+    $(document).on("click", "#rengrosadora", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "RENGROSADORA MADERA"
+        div.textContent = nombreEquipo;
+
+    });
+
+    $(document).on("click", "#taladrop", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "TALADRO PEDESTAL"
+        div.textContent = nombreEquipo;
+
+    });
+
+    $(document).on("click", "#taladrom", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "TALADRO MANUAL"
+        div.textContent = nombreEquipo;
+
+    });
+
+    $(document).on("click", "#trituradora", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "TRITURADORA GRANOS"
+        div.textContent = nombreEquipo;
+
+    });
+
+    $(document).on("click", "#molino", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "MOLINO HARINA"
+        div.textContent = nombreEquipo;
+
+    });
+    ///
+        $(document).on("click", "#fresamulti", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "FRESA MULTIFUNCIONAL"
+        div.textContent = nombreEquipo;
+
+    });
+    $(document).on("click", "#torno", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "TORNO MECANICO"
+        div.textContent = nombreEquipo;
+
+    });
+
+    $(document).on("click", "#tornom", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "TORNO MADERA"
+        div.textContent = nombreEquipo;
+
+    });
+
+    $(document).on("click", "#discocircular", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "MAQUINA CIRCULAR"
+        div.textContent = nombreEquipo;
+
+    });
+
+    $(document).on("click", "#radian", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "RADIAN"
+        div.textContent = nombreEquipo;
+
+    });
+
+    $(document).on("click", "#msoldar", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "SOLDADURA"
+        div.textContent = nombreEquipo;
+
+    });
+
+    $(document).on("click", "#cortadora", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "RENGLETEADORA"
+        div.textContent = nombreEquipo;
+
+    });
+          $(document).on("click", "#imprenta", function(evt)
+    {   
+        var div = document.getElementById("idtxtnombre3");
+        nombreEquipo = "IMPRESORA GIGANTOGRAFIA"
+        div.textContent = nombreEquipo;
+
+    });
+
+    
+
+
+
+     $(document).on("click", "#consultar3", function(evt)
+    {   alert('consultar 3') ;
+        
+        for (var i = 0; i < equipos.length; i++) {
+
+            $("#resultado3").append('<div style="color:blue">Nombre Equipo: '+equipos[i].nombre+'</div>'+'Cantidad de equipo:'+equipos[i].c+'<br>'+'Potencia(watts):'+equipos[i].p +'<br>'+'Tiempo de uso:'+ equipos[i].t+' Hrs<br>'+'<div style="color:blue">Costo por mes: S/.'+equipos[i].monto+'</div><br>');
+        };
+        $("#resultado3").append('<div style="color:blue" >Monto Total: S/.'+montoTotal+'</div>');
+    
+    });
+
+
+
         /* graphic button  #imprenta */
   
     
@@ -563,6 +724,8 @@
     $(document).on("click", "#agregar3", function(evt)
     {
          activate_page("#constrifa"); 
+
+         alert('consultar 333333') ;
     });
     
     }
