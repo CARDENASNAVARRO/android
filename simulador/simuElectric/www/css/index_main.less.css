@@ -312,21 +312,22 @@ body:not(#afui) .upage-outer {
     font-size: 20px;
     font-style: oblique;
     font-weight: bolder;
-    color: #000040;
+    color: #0000ff;
     font-family: serif;
     text-decoration: none;
+    text-align: center;
   }
 }
 @media all {
   #afui .default-graphic-sizing {
-    width: 150px    !important;
+    width: 150px     !important;
     -webkit-flex: 0 0 auto !important;
     -moz-flex: 0 0 auto !important;
     -ms-flex: 0 0 auto !important;
     -o-flex: 0 0 auto !important;
     flex: 0 0 auto !important;
-    min-width: 150px ;
-    max-width: 250px;
+    min-width: 150px  ;
+    max-width: 25px;
     padding: 5px 5px 5px 5px;
   }
 }
@@ -336,12 +337,35 @@ body:not(#afui) .upage-outer {
   }
 }
 @media all {
-  
+  #afui .wrapping-col > .d-margins,
+  #afui .wrapping-col > .afScrollPanel > .d-margins {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #afui .wrapping-col > .d-margins,
+  #afui .wrapping-col > .afScrollPanel > .d-margins {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #afui .vertical-col > .d-margins,
+  #afui .vertical-col > .afScrollPanel > .d-margins {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #afui .vertical-col > .d-margins,
+  #afui .vertical-col > .afScrollPanel > .d-margins {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #afui .d-margins {
+    margin-top: 10px;
+    margin-bottom: 28px;
+  }
 }
 @media all {
   #afui .fondoprincipal {
-    background-color: #ff8247;
-    background-image: url("../images/1.jpg");
+    background-color: #ffffff;
+    background-image: url("../images/lampara.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -363,10 +387,10 @@ body:not(#afui) .upage-outer {
 }
 @media all {
   #afui .paginaprincipal p {
-    font-size: 25px;
+    font-size: 26px;
     font-style: italic;
-    font-weight: bold;
-    color: #000080;
+    font-weight: bolder;
+    color: #ffff00;
     font-family: serif;
     text-decoration: underline;
     text-align: center;
@@ -489,7 +513,7 @@ body:not(#afui) .upage-outer {
 @media all {
   #afui .fondotrif {
     background-color: ;
-    background-image: url("../images/elec.jpg");
+    background-image: url("../images/kwh.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -2305,6 +2329,89 @@ body:not(#afui) .upage-outer {
   #afui .fonddetaltrif {
     background-color: ;
     background-image: url("../images/elec.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+@media all {
+  #afui .wrapping-col > .letras,
+  #afui .wrapping-col > .afScrollPanel > .letras,
+  #afui .vertical-col > .letras,
+  #afui .vertical-col > .afScrollPanel > .letras {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #afui .wrapping-col > .letras,
+  #afui .wrapping-col > .afScrollPanel > .letras,
+  #afui .vertical-col > .letras,
+  #afui .vertical-col > .afScrollPanel > .letras {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #afui .wrapping-col > .letras,
+  #afui .wrapping-col > .afScrollPanel > .letras,
+  #afui .vertical-col > .letras,
+  #afui .vertical-col > .afScrollPanel > .letras {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #afui .wrapping-col > .letras,
+  #afui .wrapping-col > .afScrollPanel > .letras,
+  #afui .vertical-col > .letras,
+  #afui .vertical-col > .afScrollPanel > .letras {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
+@media all {
+  #afui .letrapie p {
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bolder;
+    color: #000080;
+    font-family: serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;
+  }
+}
+@media all {
+  #afui .wrapping-col > .red,
+  #afui .wrapping-col > .afScrollPanel > .red {
+    margin-left: 56px;
+  }
+  #afui .wrapping-col > .red,
+  #afui .wrapping-col > .afScrollPanel > .red {
+    margin-left: 56px;
+  }
+  #afui .vertical-col > .red,
+  #afui .vertical-col > .afScrollPanel > .red {
+    margin-left: 70px;
+  }
+  #afui .vertical-col > .red,
+  #afui .vertical-col > .afScrollPanel > .red {
+    margin-left: 70px;
+  }
+  #afui .red {
+    margin-top: 38px;
+    margin-bottom: 40px;
+  }
+}
+@media all {
+  #afui .vertical-col > .btnagrgar,
+  #afui .vertical-col > .afScrollPanel > .btnagrgar {
+    margin-left: 10px;
+  }
+  #afui .vertical-col > .btnagrgar,
+  #afui .vertical-col > .afScrollPanel > .btnagrgar {
+    margin-left: 10px;
+  }
+}
+@media all {
+  #afui .resultados {
+    background-color: ;
+    background-image: url("../images/3.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;

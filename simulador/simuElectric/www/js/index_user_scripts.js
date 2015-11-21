@@ -5,7 +5,11 @@
 
     function register_event_handlers()
     {
-    
+        var nombreEquipo = null;
+        var montoTotal = 0;
+        var equipos = [];
+        var eTrifasico = [];
+        var montoTotalT = 0;
                       
         $(document).on("click", "#monocalcular", function(evt)
         {
@@ -171,7 +175,7 @@
                      $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
                      
                     }
-                   if (5000>diferenciaLectura<=7500) {
+                   if (diferenciaLectura<=7500 && diferenciaLectura>5000) {///CORRRIGIR
                                     
                      
                      var energia = diferenciaLectura * costoKWh;
@@ -288,7 +292,7 @@
 
       });
         //BUTTON REFRI
-    $(document).on("click", "#refri", function(evt)
+    $(document).on("click", "#reefriger", function(evt)
     {   
         var div = document.getElementById("idtxtnombre");
         nombreEquipo = "REFRIGERADORA"
@@ -453,14 +457,24 @@
 
     });
 
-     $(document).on("click", "#consultarmono", function(evt)
-    {   //alert('consultar mono') ;
+    $(document).on("click", "#agregar1", function(evt)
+    {   
+        var cantidad = document.getElementById('cantidad1');
+        var potencia = document.getElementById('potencia1');
+        var tiempo = document.getElementById('horas1');
+           
+        equiposGasto(cantidad.value*1,potencia.value*1,tiempo.value*1);
+        
+    });
+    
+    $(document).on("click", "#consultarmono", function(evt)
+    {   
         
         for (var i = 0; i < equipos.length; i++) {
 
-            $("#idresultado").append('<div style="color:blue">Nombre Equipo: '+equipos[i].nombre+'</div>'+'Cantidad de equipo:'+equipos[i].c+'<br>'+'Potencia(watts):'+equipos[i].p +'<br>'+'Tiempo de uso:'+ equipos[i].t+' Hrs<br>'+'<div style="color:blue">Costo por mes: S/.'+equipos[i].monto+'</div><br>');
+            $("#idresultado").append('<div style="color:blue">Nombre Equipo: '+equipos[i].nombre+'</div>'+'Cantidad de equipo:'+equipos[i].c+'<br>'+'Potencia(watts):'+equipos[i].p +'<br>'+'Tiempo de uso:'+ equipos[i].t+' Hrs<br>'+'<div style="color:green">Costo por mes: S/.'+equipos[i].monto+'</div><br>');
         };
-        $("#idresultado").append('<div style="color:blue" >Monto Total: S/.'+montoTotal+'</div>');
+        $("#idresultado").append('<div style="color:red" >Monto Total: S/.'+montoTotal+'</div>');
     
     });
 
@@ -480,7 +494,7 @@
         equipos.push(equipo);
 
         montoTotal += montoTotalArtefacto;
-        alert(montoTotalArtefacto);
+        //alert(montoTotalArtefacto);
     }
 
 
@@ -552,12 +566,15 @@
     });
 
 ///button de  consumo trifasico//
+    
+    var hp = 0;
 
      $(document).on("click", "#afiladora", function(evt)
       {   
         var div = document.getElementById("idtxtnombre3");
-        nombreEquipo = "AFILADORA HERRAMIENTAS "
+        nombreEquipo = "AFILADORA HERRAMIENTAS";
         div.textContent = nombreEquipo;
+        hp = 2.5;
 
       });
         //BUTTON REFRI
@@ -566,6 +583,7 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "CEPILLADORA"
         div.textContent = nombreEquipo;
+        hp = 3;
 
      });
 
@@ -574,6 +592,7 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "BOMBA DE AGUA"
         div.textContent = nombreEquipo;
+        hp = 4;
 
     });
 
@@ -582,6 +601,7 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "COMPRESORA"
         div.textContent = nombreEquipo;
+        hp = 5;
 
     });
     $(document).on("click", "#rculatas", function(evt)
@@ -589,6 +609,7 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "RECTIFICADOR CULATAS"
         div.textContent = nombreEquipo;
+        hp = 1.5;
 
     });
 
@@ -597,6 +618,7 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "RENGROSADORA MADERA"
         div.textContent = nombreEquipo;
+        hp = 4;
 
     });
 
@@ -605,6 +627,7 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "TALADRO PEDESTAL"
         div.textContent = nombreEquipo;
+        hp = 2.5;
 
     });
 
@@ -613,6 +636,7 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "TALADRO MANUAL"
         div.textContent = nombreEquipo;
+        hp = 0.75; 
 
     });
 
@@ -621,6 +645,7 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "TRITURADORA GRANOS"
         div.textContent = nombreEquipo;
+        hp = 4;       
 
     });
 
@@ -629,6 +654,7 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "MOLINO HARINA"
         div.textContent = nombreEquipo;
+        hp = 4;
 
     });
     ///
@@ -637,6 +663,7 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "FRESA MULTIFUNCIONAL"
         div.textContent = nombreEquipo;
+        hp = 10;
 
     });
     $(document).on("click", "#torno", function(evt)
@@ -644,7 +671,7 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "TORNO MECANICO"
         div.textContent = nombreEquipo;
-
+        hp = 8;
     });
 
     $(document).on("click", "#tornom", function(evt)
@@ -652,7 +679,7 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "TORNO MADERA"
         div.textContent = nombreEquipo;
-
+        hp = 2.5;
     });
 
     $(document).on("click", "#discocircular", function(evt)
@@ -660,7 +687,7 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "MAQUINA CIRCULAR"
         div.textContent = nombreEquipo;
-
+        hp = 4;
     });
 
     $(document).on("click", "#radian", function(evt)
@@ -668,7 +695,7 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "RADIAN"
         div.textContent = nombreEquipo;
-
+        hp = 0.75;
     });
 
     $(document).on("click", "#msoldar", function(evt)
@@ -676,7 +703,7 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "SOLDADURA"
         div.textContent = nombreEquipo;
-
+        hp = 3.5;
     });
 
     $(document).on("click", "#cortadora", function(evt)
@@ -684,30 +711,58 @@
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "RENGLETEADORA"
         div.textContent = nombreEquipo;
-
+        hp = 1.4;
     });
           $(document).on("click", "#imprenta", function(evt)
     {   
         var div = document.getElementById("idtxtnombre3");
         nombreEquipo = "IMPRESORA GIGANTOGRAFIA"
         div.textContent = nombreEquipo;
-
+        hp = 2;
     });
 
-    
-
-
-
-     $(document).on("click", "#consultar3", function(evt)
-    {   alert('consultar 3') ;
+    //agregando equipos trifasico
+    $(document).on("click", "#agregar3", function(evt)
+    {   
+        //var potencia = document.getElementById('hp');
+        var cantidad = document.getElementById('maquinas');
+        var tiempo = document.getElementById('tiempo3');   
+        equiposTrifasicoGasto(cantidad.value*1,hp,tiempo.value*1);
         
-        for (var i = 0; i < equipos.length; i++) {
+    });
 
-            $("#resultado3").append('<div style="color:blue">Nombre Equipo: '+equipos[i].nombre+'</div>'+'Cantidad de equipo:'+equipos[i].c+'<br>'+'Potencia(watts):'+equipos[i].p +'<br>'+'Tiempo de uso:'+ equipos[i].t+' Hrs<br>'+'<div style="color:blue">Costo por mes: S/.'+equipos[i].monto+'</div><br>');
+
+    $(document).on("click", "#consultar3", function(evt)
+    {   
+        
+        for (var i = 0; i < eTrifasico.length; i++) {
+
+            $("#resultado3").append('<div style="color:blue">Nombre Equipo: '+eTrifasico[i].nombre+'</div>'+'Cantidad de equipo:'+eTrifasico[i].c+'<br>'+'Potencia(HP):'+eTrifasico[i].p +'<br>'+'Tiempo de uso:'+ eTrifasico[i].t+' Hrs<br>'+'<div style="color:blue">Costo por mes: S/.'+eTrifasico[i].monto+'</div><br>');
         };
-        $("#resultado3").append('<div style="color:blue" >Monto Total: S/.'+montoTotal+'</div>');
+        $("#resultado3").append('<div style="color:blue" >Monto Total: S/.'+montoTotalT+'</div>');
     
     });
+
+    function equiposTrifasicoGasto(cantidad,potencia,tiempo){
+        
+        var costoKWh = 0.6470;
+        var _hp = potencia*746;
+
+        var montoTotalArtefactoT = ((cantidad*(_hp * tiempo))/1000) * costoKWh;
+        
+        var equipoT = {}
+        
+            equipoT.nombre = nombreEquipo; 
+            equipoT.c = cantidad;
+            equipoT.p = potencia;
+            equipoT.t = tiempo;
+            equipoT.monto = montoTotalArtefactoT;
+
+        eTrifasico.push(equipoT);
+
+        montoTotalT += montoTotalArtefactoT;
+        //alert(montoTotalArtefactoT);
+    }
 
 
 
@@ -721,12 +776,7 @@
     });
     
         /* button  #agregar3 */
-    $(document).on("click", "#agregar3", function(evt)
-    {
-         activate_page("#constrifa"); 
-
-         alert('consultar 333333') ;
-    });
+    
     
     }
 
