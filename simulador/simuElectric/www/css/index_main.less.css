@@ -339,27 +339,27 @@ body:not(#afui) .upage-outer {
 @media all {
   #afui .wrapping-col > .d-margins,
   #afui .wrapping-col > .afScrollPanel > .d-margins {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 6px;
+    margin-right: 6px;
   }
   #afui .wrapping-col > .d-margins,
   #afui .wrapping-col > .afScrollPanel > .d-margins {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  #afui .vertical-col > .d-margins,
-  #afui .vertical-col > .afScrollPanel > .d-margins {
     margin-left: 6px;
     margin-right: 6px;
   }
   #afui .vertical-col > .d-margins,
   #afui .vertical-col > .afScrollPanel > .d-margins {
-    margin-left: 6px;
+    margin-left: 65px;
+    margin-right: 6px;
+  }
+  #afui .vertical-col > .d-margins,
+  #afui .vertical-col > .afScrollPanel > .d-margins {
+    margin-left: 65px;
     margin-right: 6px;
   }
   #afui .d-margins {
-    margin-top: 10px;
-    margin-bottom: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 }
 @media all {
@@ -2377,26 +2377,7 @@ body:not(#afui) .upage-outer {
   }
 }
 @media all {
-  #afui .wrapping-col > .red,
-  #afui .wrapping-col > .afScrollPanel > .red {
-    margin-left: 56px;
-  }
-  #afui .wrapping-col > .red,
-  #afui .wrapping-col > .afScrollPanel > .red {
-    margin-left: 56px;
-  }
-  #afui .vertical-col > .red,
-  #afui .vertical-col > .afScrollPanel > .red {
-    margin-left: 70px;
-  }
-  #afui .vertical-col > .red,
-  #afui .vertical-col > .afScrollPanel > .red {
-    margin-left: 70px;
-  }
-  #afui .red {
-    margin-top: 38px;
-    margin-bottom: 40px;
-  }
+  
 }
 @media all {
   #afui .vertical-col > .btnagrgar,
