@@ -349,12 +349,12 @@ body:not(#afui) .upage-outer {
   }
   #afui .vertical-col > .d-margins,
   #afui .vertical-col > .afScrollPanel > .d-margins {
-    margin-left: 65px;
+    margin-left: 10px;
     margin-right: 6px;
   }
   #afui .vertical-col > .d-margins,
   #afui .vertical-col > .afScrollPanel > .d-margins {
-    margin-left: 65px;
+    margin-left: 10px;
     margin-right: 6px;
   }
   #afui .d-margins {
