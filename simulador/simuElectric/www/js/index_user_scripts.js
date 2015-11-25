@@ -43,7 +43,7 @@
                      var total = subtotal + subtotal * igv;
                      var TotalPago = total + electrificacion;
                      var ppgg1= TotalPago.toFixed(3);
-                     $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#2A7513;font-size: 24px">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#C5560B; font-size: 15px"> S/. '+ sbtt1 + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#AAC520;font-size: 15px ">S/. '+ppgg1+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500; font-size: 15px"'+'<br>';
+                     $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#2A7513;font-size: 20px">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#C5560B; font-size: 20px"> S/. '+ sbtt1 + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#AAC520;font-size: 20px">S/. '+ppgg1+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#1F17FC; font-size: 20px"'+'<br>';
 
                     }
 
@@ -59,7 +59,7 @@
                      var total = subtotal + subtotal * igv;
                      var TotalPago = total + electrificacion;
                      var ppgg2= TotalPago.toFixed(2);
-                     $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt2 + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg2+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                     $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4558;font-size: 20px">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B;font-size: 20px"> S/. '+ sbtt2 + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520;font-size: 20px">S/. '+ppgg2+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500;font-size: 20px"'+'<br>';
                      
                     }
 
@@ -74,7 +74,7 @@
                      var total = subtotal + subtotal * igv;
                      var TotalPago = total + electrificacion;
                      var ppgg= TotalPago.toFixed(2);
-                     $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                     $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513;font-size: 20px">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B;font-size: 20px"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520;font-size: 20px">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500;font-size: 20px"'+'<br>';
                      
                     }                
 
@@ -127,7 +127,7 @@
                      var total = subtotal + subtotal * igv;
                      var TotalPago = total + electrificacion;
                      var ppgg= TotalPago.toFixed(2);
-                     $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                     $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8868B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
                      
                     }
                     if (diferenciaLectura<=1500 &&diferenciaLectura>1000) {
@@ -469,9 +469,9 @@
         
         for (var i = 0; i < equipos.length; i++) {
 
-            $("#idresultado").append('<div style="color:blue">Nombre Equipo: '+equipos[i].nombre+'</div>'+'Cantidad de equipo:'+equipos[i].c+'<br>'+'Potencia(watts):'+equipos[i].p +'<br>'+'Tiempo de uso:'+ equipos[i].t+' Hrs<br>'+'<div style="color:green">Costo por mes: S/.'+equipos[i].monto+'</div><br>');
+            $("#idresultado").append('<div style="color:blue;font-size: 20px">Nombre Equipo: '+equipos[i].nombre+'</div>'+'Cantidad de equipo:'+equipos[i].c+'<br>'+'Potencia(watts):'+equipos[i].p +'<br>'+'Tiempo de uso:'+ equipos[i].t+' Hrs<br>'+'<div style="color:green;font-size: 20px">Costo por mes: S/.'+equipos[i].monto+'</div><br>');
         };
-        $("#idresultado").append('<div style="color:red" >Monto Total: S/.'+montoTotal+'</div>');
+        $("#idresultado").append('<div style="color:red;font-size: 20px" >Monto Total: S/.'+montoTotal+'</div>');
     
     });
 
@@ -526,7 +526,7 @@
                      var total = subtotal + subtotal * igv;
                      var TotalPago = total + electrificacion;
                      var ppgg1= TotalPago.toFixed(3);
-                     $('#salida')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt1 + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg1+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                     $('#salida')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513;font-size: 20px">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B;font-size: 20px"> S/. '+ sbtt1 + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520;font-size: 20px">S/. '+ppgg1+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500;font-size: 20px"'+'<br>';
 
                     
            }
@@ -734,9 +734,9 @@
         
         for (var i = 0; i < eTrifasico.length; i++) {
 
-            $("#resultado3").append('<div style="color:blue;font-size: 15px;">Nombre Equipo: '+eTrifasico[i].nombre+'</div>'+'Cantidad de equipo:'+eTrifasico[i].c+'<br>'+'Potencia(HP):'+eTrifasico[i].p +'<br>'+'Tiempo de uso:'+ eTrifasico[i].t+' Hrs<br>'+'<div style="color:blue; font-size: 15px;">Costo por mes: S/.'+eTrifasico[i].monto+'</div><br>');
+            $("#resultado3").append('<div style="color:blue;font-size: 20px">Nombre Equipo: '+eTrifasico[i].nombre+'</div>'+'Cantidad de equipo:'+eTrifasico[i].c+'<br>'+'Potencia(HP):'+eTrifasico[i].p +'<br>'+'Tiempo de uso:'+ eTrifasico[i].t+' Hrs<br>'+'<div style="color:blue; font-size: 20px">Costo por mes: S/.'+eTrifasico[i].monto+'</div><br>');
         };
-        $("#resultado3").append('<div style="color:blue;font-size: 15px;" >Monto Total: S/.'+montoTotalT+'</div>');
+        $("#resultado3").append('<div style="color:blue;font-size: 20px" >Monto Total: S/.'+montoTotalT+'</div>');
     
     });
 
