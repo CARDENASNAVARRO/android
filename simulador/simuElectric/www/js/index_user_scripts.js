@@ -283,7 +283,7 @@
          lecActual.value='';
          lecAnterior.value='';   
         });
-        //BUTTON CICINA
+        //BUTTON COCINA
     $(document).on("click", "#cocina", function(evt)
       {   
         var div = document.getElementById("idtxtnombre");
@@ -481,7 +481,7 @@
     function equiposGasto(cantidad,potencia,tiempo){
         
         var costoKWh = 0.6070;
-        var montoTotalArtefacto = ((cantidad*(potencia * tiempo))/1000) * costoKWh;
+        var montoTotalArtefacto = ((cantidad*(potencia * tiempo))/1000)* 30 * costoKWh;
         
         var equipo = {}
         
@@ -737,9 +737,9 @@
         
         for (var i = 0; i < eTrifasico.length; i++) {
 
-            $("#resultado3").append('<div style="color:blue">Nombre Equipo: '+eTrifasico[i].nombre+'</div>'+'Cantidad de equipo:'+eTrifasico[i].c+'<br>'+'Potencia(HP):'+eTrifasico[i].p +'<br>'+'Tiempo de uso:'+ eTrifasico[i].t+' Hrs<br>'+'<div style="color:blue">Costo por mes: S/.'+eTrifasico[i].monto+'</div><br>');
+            $("#resultado3").append('<div style="color:blue;font-size: 15px;">Nombre Equipo: '+eTrifasico[i].nombre+'</div>'+'Cantidad de equipo:'+eTrifasico[i].c+'<br>'+'Potencia(HP):'+eTrifasico[i].p +'<br>'+'Tiempo de uso:'+ eTrifasico[i].t+' Hrs<br>'+'<div style="color:blue; font-size: 15px;">Costo por mes: S/.'+eTrifasico[i].monto+'</div><br>');
         };
-        $("#resultado3").append('<div style="color:blue" >Monto Total: S/.'+montoTotalT+'</div>');
+        $("#resultado3").append('<div style="color:blue;font-size: 15px;" >Monto Total: S/.'+montoTotalT+'</div>');
     
     });
 
@@ -748,7 +748,7 @@
         var costoKWh = 0.6470;
         var _hp = potencia*746;
 
-        var montoTotalArtefactoT = ((cantidad*(_hp * tiempo))/1000) * costoKWh;
+        var montoTotalArtefactoT = ((cantidad*(_hp * tiempo))/1000)* 30 * costoKWh;
         
         var equipoT = {}
         
@@ -765,9 +765,7 @@
     }
 
 
-
-        /* graphic button  #imprenta */
-  
+    
     
         /* button  #agregar1 */
     $(document).on("click", "#agregar1", function(evt)

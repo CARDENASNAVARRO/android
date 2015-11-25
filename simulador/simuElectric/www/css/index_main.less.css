@@ -339,13 +339,13 @@ body:not(#afui) .upage-outer {
 @media all {
   #afui .wrapping-col > .d-margins,
   #afui .wrapping-col > .afScrollPanel > .d-margins {
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
   #afui .wrapping-col > .d-margins,
   #afui .wrapping-col > .afScrollPanel > .d-margins {
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
   #afui .vertical-col > .d-margins,
   #afui .vertical-col > .afScrollPanel > .d-margins {
@@ -358,14 +358,14 @@ body:not(#afui) .upage-outer {
     margin-right: 6px;
   }
   #afui .d-margins {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
 }
 @media all {
   #afui .fondoprincipal {
     background-color: #ffffff;
-    background-image: url("../images/lampara.png");
+    background-image: url("../images/lamp.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -390,7 +390,7 @@ body:not(#afui) .upage-outer {
     font-size: 26px;
     font-style: italic;
     font-weight: bolder;
-    color: #ffff00;
+    color: #0000ff;
     font-family: serif;
     text-decoration: underline;
     text-align: center;
