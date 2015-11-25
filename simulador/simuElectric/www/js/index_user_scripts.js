@@ -19,25 +19,22 @@
          var igv = 0.18;
          var consumo = 0;
          var mantenimiento = 0.67;
-         var costoKWh = 0.495;
+         var costoKWh = 0.6023;
          var electrificacion = 0.42;
          var  alum_public= 0.3623;
  
          var cargofijo = 3.59;
          var intereses = 0.08;
-
-        
-           if((lecAnterior.value)*1 < (lecActual.value)*1)
+         if((lecAnterior.value)*1 < (lecActual.value)*1)
            {  
-         
-             var diferenciaLectura = (lecActual.value)*1 - (lecAnterior.value)*1;
+                   var diferenciaLectura = (lecActual.value)*1 - (lecAnterior.value)*1;
             
 
                if (diferenciaLectura<=30) {
                      
                     alert("USTED TIENE LA POSIBILIDAD DE AFILIARSE AL FISE");
 
-                     var energia = diferenciaLectura* costoKWh;
+                     var energia = (diferenciaLectura/2)* costoKWh;
                      var costoAlumbrado= 1 * alum_public;
                     
                      var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
@@ -46,7 +43,7 @@
                      var total = subtotal + subtotal * igv;
                      var TotalPago = total + electrificacion;
                      var ppgg1= TotalPago.toFixed(3);
-                     $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt1 + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg1+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                     $('#idimprimir')[0].innerHTML='USTED CONSUMIO :'+'<div style="color:#2A7513;font-size: 24px">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#C5560B; font-size: 15px"> S/. '+ sbtt1 + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#AAC520;font-size: 15px ">S/. '+ppgg1+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500; font-size: 15px"'+'<br>';
 
                     }
 
