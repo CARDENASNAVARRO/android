@@ -25,6 +25,21 @@
  
          var cargofijo = 3.59;
          var intereses = 0.08;
+
+         
+    if(lecActual.value != '' && lecAnterior.value != '')
+
+           {  
+                alert("No ingreso datos");
+                var lecActual = document.getElementById('LecturaActual');
+                var lecAnterior = document.getElementById('LecturaAnterior');     
+                document.getElementById('idimprimir').innerHTML='INGRESAR  DATOS ';
+                lecActual.value='';
+                lecAnterior.value=''; 
+            } 
+           
+
+
          if((lecAnterior.value)*1 < (lecActual.value)*1)
            {  
                    var diferenciaLectura = (lecActual.value)*1 - (lecAnterior.value)*1;
@@ -260,17 +275,7 @@
                 lecActual.value='';
                 lecAnterior.value=''; 
             } 
-			if((lecAnterior.value)*1='' && (lecActual.value)*1='')
-
-           {  
-                alert("No ingreso datos");
-                var lecActual = document.getElementById('LecturaActual');
-                var lecAnterior = document.getElementById('LecturaAnterior');     
-                document.getElementById('idimprimir').innerHTML='INGRESAR  DATOS ';
-                lecActual.value='';
-                lecAnterior.value=''; 
-            } 
-           
+		
                        
 
  
