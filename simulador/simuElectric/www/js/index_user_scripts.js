@@ -492,7 +492,7 @@
 
     function equiposGasto(cantidad,potencia,tiempo){
         
-        var costoKWh = 0.6070;
+        var costoKWh = 0.395;
         var montoTotalArtefacto = ((cantidad*(potencia * tiempo))/1000)* 30 * costoKWh;
         
         var equipo = {}
@@ -757,7 +757,7 @@
 
     function equiposTrifasicoGasto(cantidad,potencia,tiempo){
         
-        var costoKWh = 0.6470;
+        var costoKWh = 0.4923;
         var _hp = potencia*746;
 
         var montoTotalArtefactoT = ((cantidad*(_hp * tiempo))/1000)* 30 * costoKWh;
